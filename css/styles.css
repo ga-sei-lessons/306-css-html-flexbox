@@ -1,0 +1,92 @@
+body {
+    background-color: hotpink;
+}
+
+.display-example {
+    /* outer display: effects the interaction between other elements */
+    display: inline;
+}
+
+/* inner dsiplay: effects the bahavior of the content */
+.display-hidden {
+    display: none;
+}
+
+.box-model-example {
+    /* margin is the space between an element and the els around it */
+    /* long way of doing it
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left */
+    /* margin: top right bottom left; */
+    margin: 50px 100px 50px 100px;
+    /* giving margin 2 values */
+    /* margin: top-bottom left-right */
+    /* margin: 150px 300px; */
+    /* 
+    border-left
+    ...ect
+    */
+    /* border: size type color; */
+    border: 5px solid black;
+    /* padding takes values the way margin does*/
+    padding: 50px 100px 50px 100px;
+}
+
+.center-og {
+    /* center block elements */
+    margin: 0 auto;
+    /* center text + inline elements */
+    text-align: center;
+}
+
+.position-box {
+    width: 20vw; /*20% of screen width */
+    height: 20vh;
+    background-color: aqua;
+    /*defualt position is static */
+    /* position: static; 
+    go with the page flow 
+    do not respond to inset
+    */
+    /* use inset to move away from defualt position */
+    /* stuck in place relative to browser window */
+    /* position: relative; */
+    /* stuck in place relative to browser window */
+    /* position: fixed; */
+    /* stuck in place relative to parent element */
+    /* for abosolute to work, parent must be relative */
+    position: absolute;
+    /* inset: 100px 0px 0px 500px; */
+    top: 100px;
+    left: 500px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.outer-div {
+    height: 50vh;
+    background-color: darkolivegreen;
+    /* flexbox on a parent will effect childre */
+    display: flex;
+    /* center horizontally */
+    justify-content: center;
+    /* center vertically */
+    align-items: center;
+}
+
+.square {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
